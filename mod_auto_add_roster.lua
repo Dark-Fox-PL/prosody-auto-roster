@@ -1,5 +1,6 @@
 local st = require "util.stanza";
 local jid = require "util.jid";
+local storagemanager = require "core.storagemanager";
 
 module:hook("message/bare", function(event)
     local origin, stanza = event.origin, event.stanza;
